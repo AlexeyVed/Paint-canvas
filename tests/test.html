@@ -1,0 +1,90 @@
+<html>
+
+<head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+     <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+     <div id="mocha"></div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
+     <script>
+          mocha.setup('bdd');
+          var assert = chai.assert;
+
+     </script>
+
+     <div class="main">
+          <div class="row">
+               <div class="leftSidebar" id="leftSidebar">
+                    <h2 id ='languageCaption'>Language</h2>
+                    <button class="leftSidebar__button" data-lang="english" id="languageEng">english</button>
+                    <button class="leftSidebar__button" data-lang="russian" id="languageRus">russian</button>
+                    <h2 id="themeCaption">Theme</h2>
+                    <button class="leftSidebar__button" data-src="defaultTheme" id="themeDefault">Default</button>
+                    <button class="leftSidebar__button" data-src="redTheme" id="themeRed">Red</button>
+                    <button class="leftSidebar__button" data-src="greenTheme" id="themeGreen">Green</button>
+                    <button class="leftSidebar__button" data-src="blueTheme" id="themeBlue">Blue</button>
+                    <button class="leftSidebar__button" data-src="darkTheme" id="themeDark">Dark</button>
+               </div>
+               <div class="paintBody" id="paintBody">
+                    <div class="row">
+                         <div class="paintBody__brushPanel" id="brushPanel">
+                              <button class="paintBody__button_collapse" id="btnCollapse"><i class="fas fa-cog"></i></button>
+                              <button class="paintBody__button active brush" id="brush"> brush</button>
+                              <div class="paintBody__size" id="paintBody__size">
+                                   <canvas id='canvasBrush' width="26" height="26"></canvas>
+                                   <input id='changeSize' type="range" min="1" max="13" step="0.5" value="7">
+                              </div>
+                              <button class="paintBody__button" id="blur"><i class="fas fa-tint"></i> blur</button>
+                              <div class="paintBody__blur" id="paintBody__blur">
+                                   <input id='changeBlur' type="range" min="0" max="8" step="0.5" value="0">
+                              </div>
+                              <button class="paintBody__button color" data-color="" id="color"> color</button>
+                              <div class="paintBody__color" id="paintBody__color">&nbsp;</div>
+                              <input type="color" class="inputColor" id="inputColor" value="#000000">
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="paintBody__sidePanel" id="figuresPanel">
+                              <button class="paintBody__button_fig control figures" id="figures"> figures</button>
+                              <button class="paintBody__button_fig rectangle" id="rectangle"> Rectangle</button>
+                              <button class="paintBody__button_fig polygon" id="polygon"> Polygon</button>
+                              <div class="paintBody__size-left" id='numberOfSidesCont'>
+                                   <span class="qtyOfSides" id="qtyOfSides"> 5</span>
+                                   <input id="numberOfSides" type="range" min="5" max="20" step="1" value="6">
+                              </div>
+                              <button class="paintBody__button_fig circle" id="circle"> Circle</button>
+                         </div>
+                         <div class="paintBody__canvas" id="paintBodyCanvas">
+                              <canvas class="canvas" id="layer0" width='800' height="600"></canvas>
+                         </div>
+                         <div class="paintBody__sidePanel" id="layersPanel">
+                              <button class="paintBody__button_fig control layers" id="layers"> layers</button>
+                              <button class="paintBody__button_layers add" data-add="add" id="add"> add</button>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="../js/index.js"></script>
+     <script src="../js/langModule.js"></script>
+     <script src="../js/themeModule.js"></script>
+     <script src="../js/brushModule.js"></script>
+     <script src="../js/layersModule.js"></script>
+     <script src="../js/paintModule.js"></script>
+     <script src="index.test.js"></script>
+
+     
+     <script>
+          mocha.run();
+
+     </script>
+</body>
+
+</html>

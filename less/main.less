@@ -1,0 +1,158 @@
+@import "vars";
+@import "mixins";
+@import "components/base";
+@import "components/dafaultTheme";
+//@font-face {
+//  font-family: "FontAwesome";
+//  font-weight: normal;
+//  font-display: auto;
+//  font-style: normal;
+//  src: url("https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf") ;
+//}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 0.5px;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.leftSidebar {
+  width: 0;
+  overflow-x: hidden;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+
+  h2 {
+    font-size: 1.2em;
+    padding: 1em 0 0.5em 0.5em;
+  }
+
+  &__button {
+    .button;
+    padding: 0.5em 0 0.5em 1em;
+    background: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+}
+
+.showSidebar {
+  width: 200px;
+  visibility: visible;
+}
+
+.paintBody {
+  width: 100%;
+  position: relative;
+
+  &__brushPanel {
+    .border;
+    width: 1232px;
+    margin: 0.5em;
+    padding: 1em;
+
+  }
+
+  &__button {
+    .button;
+    .border;
+    padding: 0.5em;
+    width: 180px;
+  }
+
+  &__button_collapse {
+    .button;
+    .border;
+    //position: absolute;
+    left: 1em;
+    padding: 0.5em 1em;
+    background: none;
+    font-size: 1.1em;
+    margin-right: 150px;
+
+  }
+
+  &__sidePanel {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    .border;
+    margin: 0 0.5em;
+    padding: 1em;
+
+  }
+
+  &__button_fig {
+    .button;
+    .border;
+    margin-top: 1em;
+    padding: 0.5em;
+    width: 100%;
+    text-align: left;
+  }
+
+
+  .control {
+    font-weight: 700;
+  }
+
+}
+
+.paintBody__canvas {
+  position: relative;
+  display: block;
+  width: 800px;
+  height: 600px;
+  margin: 0 0.5em;
+
+  .canvas {
+    top: 0;
+    left: 0;
+    position: absolute;
+    .border;
+  }
+}
+
+
+.paintBody__button_layers {
+  .button;
+  margin-top: 1em;
+  padding: 0.5em;
+  text-align: left;
+  background: none;
+
+}
+
+
+.paintBody__delBtn {
+  .button;
+  width: 2em;
+  margin-top: 1em;
+  padding: 0.5em 0.5em 0.5em 0;
+  background: none;
+  text-align: right;
+}
+
+

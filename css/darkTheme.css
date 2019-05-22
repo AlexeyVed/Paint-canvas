@@ -1,0 +1,118 @@
+.header {
+    color: rgba(255, 255, 255, 1);
+    background: #424242;
+}
+
+a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.main {
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #E0E0E0;
+}
+
+.leftSidebar {
+    color: rgba(255, 255, 255, 0.8);
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.leftSidebar h2 {
+    color: #FFFFFF;
+}
+
+.leftSidebar__button {
+    color: rgba(255, 255, 255, 0.8);
+    background: none;
+}
+
+.leftSidebar__button:hover {
+    color: #FFFFFF;
+}
+
+.paintBody__brushPanel {
+    background: #232526; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #414345, #232526); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.paintBody__button {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #3D3F41;
+}
+
+.paintBody__button:hover {
+    background-color: #676767;
+}
+
+.paintBody__button_collapse {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.paintBody__sidePanel {
+    background: #232526; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #414345, #232526); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.paintBody__button_fig {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #676767;
+}
+
+.paintBody__button_fig:hover {
+    background-color: #676767;
+}
+
+.paintBody .control {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #424242;
+
+}
+
+.paintBody__delBtn {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.paintBody__button.active {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #1c1c1c;
+}
+
+.paintBody__button_fig.control {
+    background-color: #424242;
+}
+
+.paintBody__button_fig.active {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #1c1c1c;
+}
+
+.paintBody__canvas {
+    background-color: #FCFCFC;
+}
+
+.paintBody__button_layers {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.paintBody__button_layers.active {
+    background-color: #1c1c1c;
+}
+
+.paintBody__button_layers:hover {
+    background-color: #676767;
+}
+
+.border {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background: #000000;
+}

@@ -1,0 +1,92 @@
+
+.header {
+  background-color: #FFFFFF;
+}
+
+.main {
+  background-color: #F3F8FB;
+}
+
+.leftSidebar {
+
+  color: #8D97AD;
+  background-color: #333842;
+
+  h2 {
+
+    color: #FFFFFF;
+  }
+  &__button {
+
+    color: #8D97AD;
+  }
+  &__button:hover {
+    color: #FFFFFF;
+  }
+
+}
+
+.paintBody {
+
+  &__brushPanel {
+    background-color: #FFFFFF;
+  }
+
+  &__button {
+       background-color: #FFFFFF;
+     }
+
+  &__button:hover {
+    background-color: #F3F8FB;
+  }
+
+  &__button_collapse {
+
+  }
+
+  &__sidePanel {
+    background-color: #FFFFFF;
+  }
+
+  &__button_fig {
+       background-color: #FFFFFF;
+     }
+
+  &__button_fig:hover {
+    background-color: #F3F8FB;
+  }
+
+  .control {
+    color: #FFFFFF;
+    background-color: #007BFF;
+  }
+
+}
+
+.paintBody__button.control.active{
+  background-color: #333842;
+}
+
+.paintBody__button_fig.control {
+  background-color: #333842;
+}
+
+.paintBody__button_fig.active {
+  background-color: #7FBDFF;
+}
+
+.paintBody__canvas {
+  background-color: #FFFFFF;
+}
+
+.paintBody__button_layers.active {
+  background-color: #7FBDFF;
+}
+
+.paintBody__button_layers:hover {
+  background-color: #F3F8FB;
+}
+
+.border{
+  border: 1px solid #F2F2F2;
+}
